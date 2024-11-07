@@ -66,6 +66,22 @@ article {
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+/* Target the first paragraph within the #membership section */
+#membership p:first-of-type {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1em;
+}
+
+/* Enlarge and float the first letter of the first paragraph */
+#membership p:first-of-type::first-letter {
+  font-size: 3rem;   
+  font-weight: bold; 
+  color: #3498db;    
+  float: left;       
+  margin-right: 10px; 
+  line-height: 1.2;   
+}
 
 .meeting-info {
   margin-bottom: 20px;
