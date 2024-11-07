@@ -1,0 +1,80 @@
+/* Basic reset to remove default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Setting the html and body font, background, and width */
+html {
+  background-color: rgb(61, 226, 226);
+  font-size: 12px;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+body {
+  background-color: rgb(231, 231, 231);
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1100px;
+  min-width: 720px;
+}
+
+/* Styling for the header and navigation sections */
+header {
+  background: linear-gradient(45deg, rgb(255, 69, 0), rgb(255, 255, 0)); /* Applying a linear gradient */
+  color: white;
+  height: 300px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+nav.toplinks {
+  float: right;
+  margin: 10px;
+  width: 40%;
+}
+
+nav.toplinks li {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+  font-size: 0.9em;
+  float: left;
+  letter-spacing: 0.1em;
+  margin-top: 50px;
+  width: 33.3%;
+  text-align: center;
+}
+
+nav.toplinks li a:visited, nav.toplinks li a:link {
+  color: rgb(151, 151, 151);
+}
+
+nav.toplinks li a:active, nav.toplinks li a:hover {
+  color: rgb(20, 167, 170);
+}
+
+nav.tabs {
+  position: absolute;
+  bottom: 0px;
+  height: 220px;
+  width: 100%;
+}
+
+nav.tabs::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+nav.tabs ul {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+nav.tabs li {
+  background-color: rgb(26, 183, 183);
+  display: block;
+  float: left;
+  height: 40px;
+ 
