@@ -57,6 +57,23 @@ header .invite-message {
   text-decoration: underline;
 }
 
+/* Event planner styling */
+section.eventplanner h2 {
+  background-color: lightsalmon;
+}
+
+div.eventheader {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 15x;
+  padding-bottom: 30px;
+}
+
+section.eventplanner div {
+  outline: solid 2px black;
+  margin: 10px 10px 10px 10px;
+}
+
 /* Article section styling */
 article {
   max-width: 1200px;
