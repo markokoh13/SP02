@@ -1,4 +1,4 @@
-/* Basic reset to remove default browser styles */
+  /* Basic reset to remove default browser styles */
 * {
   margin: 0;
   padding: 0;
@@ -18,6 +18,26 @@ body {
   width: 90%;
   max-width: 1100px;
   min-width: 720px;
+}
+
+/* event planner layout */
+
+section.eventplanner {
+  display: flex;
+  flex-flow: wrap; 
+}
+
+section.eventplanner div {
+  flex: 1 1 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  outline: solid 2px black;
+  margin: 10px 10px 10px 10px;
+  
+}
+
+body {
+  padding-bottom: 50px;
 }
 
 /* Styling for the header and navigation sections */
