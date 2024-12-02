@@ -1,4 +1,4 @@
-  /* Basic reset to remove default browser styles */
+/* Basic reset to remove default browser styles */
 * {
   margin: 0;
   padding: 0;
@@ -21,10 +21,9 @@ body {
 }
 
 /* event planner layout */
-
 section.eventplanner {
   display: flex;
-  flex-flow: wrap; 
+  flex-flow: wrap;
 }
 
 section.eventplanner div {
@@ -33,7 +32,6 @@ section.eventplanner div {
   flex-flow: column nowrap;
   outline: solid 2px black;
   margin: 10px 10px 10px 10px;
-  
 }
 
 body {
@@ -97,4 +95,128 @@ nav.tabs li {
   display: block;
   float: left;
   height: 40px;
- 
+}
+
+/* Mobile first styling */
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 10px; /* Adjust font size for small screens */
+  }
+
+  body {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    padding-bottom: 20px;
+  }
+
+  header {
+    height: auto; /* Adjust header height for mobile */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  nav.toplinks {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  nav.toplinks li {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  nav.tabs {
+    height: 160px;
+  }
+
+  nav.tabs li {
+    height: 35px;
+    width: 100%;
+  }
+
+  section.eventplanner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section.eventplanner div {
+    flex: 1 1 100%;
+    width: 90%;
+    margin: 10px 0;
+  }
+}
+
+/* Tablet responsive styling */
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 11px; /* Adjust font size for tablets */
+  }
+
+  nav.toplinks {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  nav.toplinks li {
+    width: 50%; /* Two items per row on tablets */
+  }
+
+  nav.tabs {
+    height: 180px; /* Adjust the height of tabs */
+  }
+
+  nav.tabs li {
+    height: 40px;
+    width: 50%; /* Two items per row on tablets */
+  }
+
+  section.eventplanner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section.eventplanner div {
+    flex: 1 1 100%;
+    width: 80%; /* Slightly smaller than full width */
+    margin: 10px 0;
+  }
+}
+
+/* Desktop styling */
+@media only screen and (min-width: 901px) {
+  html {
+    font-size: 12px; /* Default font size for desktops */
+  }
+
+  nav.toplinks {
+    float: right;
+    margin: 10px;
+    width: 40%;
+  }
+
+  nav.toplinks li {
+    font-size: 0.9em;
+    width: 33.3%; /* Three items per row on desktops */
+    margin-top: 50px;
+  }
+
+  nav.tabs li {
+    height: 40px;
+    width: 33.3%; /* Three items per row on desktops */
+  }
+
+  section.eventplanner {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  section.eventplanner div {
+    flex: 1 1 20%;
+    margin: 10px;
+  }
+}
