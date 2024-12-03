@@ -18,24 +18,22 @@ body {
   width: 90%;
   max-width: 1100px;
   min-width: 720px;
+  padding-bottom: 50px;
 }
 
 /* event planner layout */
 section.eventplanner {
   display: flex;
-  flex-flow: wrap;
+  flex-flow: row wrap; /* Change to row to make items appear horizontally */
+  justify-content: space-between; /* Optional, to add space between the sections */
 }
 
 section.eventplanner div {
-  flex: 1 1 20px;
+  flex: 1 1 30%; /* Make each section take up 30% of the available width, adjust as needed */
   display: flex;
   flex-flow: column nowrap;
   outline: solid 2px black;
-  margin: 10px 10px 10px 10px;
-}
-
-body {
-  padding-bottom: 50px;
+  margin: 10px;
 }
 
 /* Styling for the header and navigation sections */
@@ -138,14 +136,13 @@ nav.tabs li {
   }
 
   section.eventplanner {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row; /* Ensure horizontal layout even on small screens */
+    justify-content: space-between;
   }
 
   section.eventplanner div {
-    flex: 1 1 100%;
-    width: 90%;
-    margin: 10px 0;
+    flex: 1 1 30%; /* Adjust the width of each section */
+    margin: 10px;
   }
 }
 
@@ -176,14 +173,13 @@ nav.tabs li {
   }
 
   section.eventplanner {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row; /* Ensure horizontal layout on tablet */
+    justify-content: space-between;
   }
 
   section.eventplanner div {
-    flex: 1 1 100%;
-    width: 80%; /* Slightly smaller than full width */
-    margin: 10px 0;
+    flex: 1 1 30%; /* Adjust the width for each section */
+    margin: 10px;
   }
 }
 
@@ -212,11 +208,12 @@ nav.tabs li {
 
   section.eventplanner {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row wrap; /* Ensure horizontal layout */
+    justify-content: space-between; /* Optional, space out the sections */
   }
 
   section.eventplanner div {
-    flex: 1 1 20%;
+    flex: 1 1 30%; /* Make each section take up 30% of the available width */
     margin: 10px;
   }
 }
