@@ -112,6 +112,16 @@ nav.tabs li {
     height: auto; /* Adjust header height for mobile */
     margin-bottom: 20px;
     text-align: center;
+    max-height: 25%;
+    padding: 35px
+  }
+
+  header div.content {
+    height:20px;
+    max-height: 10%;
+  }
+  header .content h1 {
+    font-size: small;
   }
 
   nav.toplinks {
